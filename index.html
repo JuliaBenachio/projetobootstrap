@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso de Fotos</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header {
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .fotos-concurso {
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Concurso de Fotos</h1>
+            <p>
+                Vote abaixo para escolher a foto vencedora do concurso.
+            </p>
+        </header>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/10/17/09/01/seagull-8320687_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Gaivota voando</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/07/05/22/30/penguin-8875750_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Pinguim nadando</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/07/29/02/28/snake-8928741_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Serpente python verde</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="row fotos-concurso">
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
+                <div class="card">
+                    <div class="card-header">
+                        Foto de autoria de Joel
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2023/10/17/09/01/seagull-8320687_1280.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Gaivota voando</h4>
+                        <h5 class="card-subtitle">História da foto:</h5>
+                        <p class="card-text">
+                            Como um grande amante de pássaros e ornitólogo, Joel viaja o país procurando novas espécies para adicionar ao seu albúm de ornitologia, sempre prezando pelos melhores angulos.
+                        </p>
+                        <a href="#" class="btn btn-success">Votar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
+                <div class="card">
+                    <div class="card-header">
+                        Foto de autoria de Ellie
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2024/07/05/22/30/penguin-8875750_1280.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Pinguim nadando</h4>
+                        <h5 class="card-subtitle">História da foto:</h5>
+                        <p class="card-text">
+                            Ellie sempre foi apaixonada por animais, principalmente pelos mais exóticos, se embrenhando em lugar mais inusitados para procurá-los e efetuar lindos registros
+                        </p>
+                        <a href="#" class="btn btn-success">Votar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 custom-col">
+                <div class="card">
+                    <div class="card-header">
+                        Foto de autoria de Sarah
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2024/07/29/02/28/snake-8928741_1280.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Serpente python verde</h4>
+                        <h5 class="card-subtitle">História da foto:</h5>
+                        <p class="card-text">
+                            Sarah é bióloga formada há 4 anos e adora viver na mata observando as diferentes espécies presente no local. Suas preferidas são as serpentes, os pássaros e as aranhas.
+                        </p>
+                        <a href="#" class="btn btn-success">Votar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
